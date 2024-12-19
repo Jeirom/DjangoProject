@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сонечка это твой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff69b4;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px; /* Скругление углов изображения */
+            margin-top: 20px; /* Отступ сверху для изображения */
+        }
+        .poll {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: rgba(0, 0, 0, 0.5); /* Прозрачный текст */
+        }
+        input {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1em;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493; /* Цвет кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <p>Сонечка, это твой сайт!</p>
+    <h1>Я тебя люблю хоть ты и вредина</h1>
+    <img src="https://placekitten.com/400/300" alt="Котик" />
+
+    <div class="poll">
+        <p>Ты обижаешься на меня?</p>
+        <input type="text" id="userResponse" placeholder="Введите ваш ответ" />
+        <button onclick="showMessage()">Отправить</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            const response = document.getElementById("userResponse").value;
+            alert("УРААА\nВаш ответ: " + response);
+        }
+    </script>
+</body>
+</html>
